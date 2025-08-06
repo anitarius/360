@@ -32,7 +32,7 @@ def frontend():
     if uploaded_file is not None:
         entrada = uploaded_file.name
         
-         st.write(f"Archivo subido: {entrada}")
+        st.write(f"Archivo subido: {entrada}")
 
         procesar_archivo(uploaded_file,nombre,apellido)
 
