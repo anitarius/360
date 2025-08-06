@@ -22,13 +22,13 @@ def frontend():
         2) Descargar informe procesado.
         """
     )
-
+    nombre = st.text_input("Nombre del evaluado", value="Marina")
+    apellido = st.text_input("Apellido del evaluado", value="Garrido")
     uploaded_file = st.file_uploader("Subir archivo de Excel", type=["xlsx"])
    
 
 
-    nombre = st.text_input("Nombre del evaluado", value="Marina")
-    apellido = st.text_input("Apellido del evaluado", value="Garrido")
+    
     if uploaded_file is not None:
         entrada = uploaded_file.name
         
