@@ -27,8 +27,8 @@ def frontend():
     st.write(f"Archivo subido: {entrada}")
 
 
-        nombre = st.text_input("Nombre del evaluado", value="Marina")
-        apellido = st.text_input("Apellido del evaluado", value="Garrido")
+    nombre = st.text_input("Nombre del evaluado", value="Marina")
+    apellido = st.text_input("Apellido del evaluado", value="Garrido")
     if uploaded_file is not None:
         entrada = uploaded_file.name
         
