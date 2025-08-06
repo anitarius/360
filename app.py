@@ -24,7 +24,7 @@ def frontend():
     )
 
     uploaded_file = st.file_uploader("Subir archivo de Excel", type=["xlsx"])
-    st.write(f"Archivo subido: {entrada}")
+   
 
 
     nombre = st.text_input("Nombre del evaluado", value="Marina")
@@ -32,7 +32,7 @@ def frontend():
     if uploaded_file is not None:
         entrada = uploaded_file.name
         
-        
+         st.write(f"Archivo subido: {entrada}")
 
         procesar_archivo(uploaded_file,nombre,apellido)
 
